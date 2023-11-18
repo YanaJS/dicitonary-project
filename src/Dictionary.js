@@ -19,6 +19,7 @@ function search(event){
     event.preventDefault();
     //alert(`Searching for the definition of "${keyword}"`);
 
+    //documentations: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     //console.log(apiUrl);
     axios.get(apiUrl).then(HandleResponse);
