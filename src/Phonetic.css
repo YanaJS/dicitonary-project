@@ -1,0 +1,11 @@
+.Phonetic .player{
+    margin-top: 8px;
+
+}
+
+
+.Phonetic .text{
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0.5;
+}

@@ -12,7 +12,7 @@ export default function App() {
         alt="logo"/>
       </header>
       <main>
-        <Dictionary/>
+        <Dictionary defaultKeyword="feather"/>
       </main>
       <footer className="App-footer">
         <small>Coded by Yana Yaman</small>
