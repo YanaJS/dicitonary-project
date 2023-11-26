@@ -3,10 +3,14 @@ body{
   background-color: #e6e3f5;
 }
 
-.a{
+a{
   color: #492dd6;
 }
 
+.App{
+  max-width: 960px;
+  margin: 0 auto;
+}
 .App-header{
   margin: 30px 0;
 }
