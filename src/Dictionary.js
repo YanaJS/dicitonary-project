@@ -23,18 +23,16 @@ function handleDictionaryResponse(response){
 }
 
 function handlePexelsResponse(response){
-    console.log("#####")
-    console.log(response.data);
-    console.log("<<<<<<<<")
     setPhotos(response.data.photos);
-
 }
 
 function search(){
     //documentations: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     //console.log(apiUrl);
-    axios.get(apiUrl).then(handleDictionaryResponse);
+    axios.get(apiUrl).then(handleDictionaryResponse).catch(function (error) {
+        console.log(error.toJSON());
+      });;
 
    
     let pexelsApiKey = "xUF9ZzXOv1urmkvh4hgkcMOY0VPS96nBhw13pvCZzcIXbDaKG5ZJwcjr";
@@ -78,7 +76,7 @@ if(loaded){
             defaultValue={props.defaultKeyword}/>
         </form>
         <div className="hint">
-        suggested words: yoga, jazz, novel, matcha, wine...
+        i.e. yoga, jazz, novel, matcha, wine...
         </div>
         </section>
         <Results  results={results}/>

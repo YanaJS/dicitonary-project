@@ -15,7 +15,8 @@ export default function App() {
         <Dictionary defaultKeyword="feather"/>
       </main>
       <footer className="App-footer">
-        <small>Coded by Yana Yaman</small>
+        This project is coded by Yana Yaman and is
+        <a href="https://github.com/YanaJS/dicitonary-project/commits/main" target="_blank" rel="noopener noreferrer"> open-sourced on GitHub</a> and <a href="https://shiny-empanada-fb3487.netlify.app/" target="_blank" rel="noopener noreferrer">hosted on Netlify</a>
       </footer>
       </div>
     </div>

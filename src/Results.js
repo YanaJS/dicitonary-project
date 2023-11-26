@@ -11,6 +11,9 @@ export default function Results(props){
             <section>
             <h2>{props.results.word}</h2>
             {props.results.phonetics.map(function(phonetic, index){
+                if(phonetic.audio === ""){
+                    return null;
+                }
                 return (
                     <div key={index}>
                         <Phonetic phonetic={phonetic} />

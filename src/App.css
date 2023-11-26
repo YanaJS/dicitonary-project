@@ -23,7 +23,15 @@ a{
   
 }
 
-.App-footer{
-  text-align: center;
-  margin: 30px 0;
+.App .App-footer {
+    text-align: center;
+    margin: 20px 0 80px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-style: oblique;
+    font-family:Arial, Helvetica, sans-serif;
+    
 }
+
+
